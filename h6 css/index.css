@@ -1,0 +1,192 @@
+nav{
+    display: flex;
+}
+#nav_left{
+    display: inline-block;
+    margin: 1rem 0rem 0rem 3rem;
+}
+*{
+    padding: 0px;
+    margin: 0px;
+}
+div{
+    display: block;
+}
+#nav_right{
+    text-decoration: none;
+    text-align: center;
+    font-size: 1.5rem;
+    color: white;
+}
+ul{
+    display: block;
+    list-style-type: disc;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+   margin-inline-end: 0px;
+   padding-inline-start: 40px;
+display: block;
+padding-left: 700px;
+list-style: none;
+display: flex;
+align-items: center;
+
+}
+#nav_right li{
+    text-align: center;
+    display: inline;
+    margin: 1rem;
+}
+#part_A span{
+    font-size: 80px;
+    color: white;
+    font-weight: bold;
+    padding: 50px 40px;
+}
+p{
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    color: white;
+    padding: 30px 30px;
+    font-style: italic;
+}
+#btn{
+    background-color: white;
+    font-size: 15px;
+    font-style: italic;
+    border: 1px solid white;
+    padding: 1rem 4rem;
+    border-radius: 30px;
+    margin-top: 1rem;
+    cursor: pointer;
+    transition: font-size 1s;
+    margin-left: 30px;
+}
+
+button{
+    display: inline-block;
+    text-align: center;
+    cursor: default;
+    box-sizing: border-box;
+
+
+
+    padding: 1px 6px;
+    border-width: 2px;
+    border-color: buttonborder;
+}
+#container{
+    display: grid;
+    grid-template-columns: repeat(2,auto);
+}
+
+#part_B {
+    display: grid;
+    grid-template-columns: repeat(2,auto);
+}
+.box{
+    margin: 1rem;
+    width: 17rem;
+    height: 17rem;
+    position: relative;
+    transition: width 1s, height 1s, bottom 1s, position 1s;
+}
+
+.box_text{
+    padding: 5px 5px;
+    color: white;
+}
+#box1::before{
+    background: url(./img1.jpg);
+    background-size: cover;
+
+}
+#box2::before{
+    background: url(./img5.jpg);
+    background-size: cover;
+}
+#box3::before{
+    background: url(./img3.jpg);
+    background-size: cover;
+}
+#box4::before{
+    background: url(./image2.png);
+    background-size: cover;
+}
+.box::before{
+    content: ' ';
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    left: 0px;
+    bottom: 0px;
+    background-repeat: no-repeat;
+    border-radius: 20px;
+    background-position: center;
+    opacity: 90%;
+    z-index: -1;
+}
+#exp_btn{
+    background-color: white;
+    font-size: 11px;
+    font-weight: bold;
+    border: 1px solid white;
+    padding: 1rem 4rem;
+    border-radius: 30px;
+    margin-top: 1rem;
+    cursor: pointer;
+    transition: font-size 1s;
+
+}
+body{
+    background-image: url(./img7.jpg);
+    height: 100%;
+    position: relative;
+    width: 100%;
+}
+
+
+
+.box:hover{
+    transform: scale(1.1);
+}
+#btn:hover{
+    transform: scale(1.1);
+}
+@media only screen and (max-width:850px) and (min-width:600px)
+{
+    #container{
+        display: grid;
+        grid-template-columns: repeat(1,auto);
+    }
+}
+@media only screen and (max-width:850px) and (min-width:600px)
+{
+    #part_B {
+        display: grid;
+        grid-template-columns: repeat(1,auto);
+        justify-content: center;
+    }
+}
+
+@media only screen and (max-width:599px) and (min-width:100px)
+{
+    #part_B {
+        display: grid;
+        grid-template-columns: repeat(1,auto);
+        justify-content: center;
+    }
+}
+
+@media only screen and (max-width:599px) and (min-width:100px)
+{
+    #container{
+        display: grid;
+        grid-template-columns: repeat(1,auto);
+        
+    }
+}
